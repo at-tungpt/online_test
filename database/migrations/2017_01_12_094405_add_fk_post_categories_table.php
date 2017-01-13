@@ -28,8 +28,8 @@ class AddFkPostCategoriesTable extends Migration
      */
     public function down()
     {
-        // Schema::table('post_categories', function (Blueprint $table) {
-        //     $table->dropForeign(['post_category_id']);
-        // });
+        Schema::table('post_categories', function (Blueprint $table) {
+            $table->dropForeign(['post_category_id']);
+        });
     }
 }
