@@ -16,7 +16,7 @@
     </form>
     <div class="social-login">
     <label for="">{!! trans('login_trans.social_network') !!}</label>
-        <a href="{{url('redirect/facebook')}}" class="fb"><i class="fa fa-facebook"></i></a>
+        <a href="{{url('redirect')}}" class="fb"><i class="fa fa-facebook"></i></a>
         <a href="{{url('redirect/twitter')}}" class="tw"><i class="fa fa-twitter"></i></a>
         <a href="{{url('redirect/google')}}" class="gp"><i class="fa fa-google-plus"></i></a>
       </div>
