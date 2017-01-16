@@ -33,7 +33,7 @@ class SocialAccountRepositories
                 $user = User::create([
                     'email' => $providerUser->getEmail(),
                     'name' => $providerUser->getName(),
-                    'role_id' => 3,
+                    'role_id' => config('define.ROLESTUDENT'),
                     ]);
             }
             return $user;
