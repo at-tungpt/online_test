@@ -26,7 +26,7 @@ class EditColumnToTestsTable extends Migration
     public function down()
     {
         Schema::table('tests', function (Blueprint $table) {
-            $table->dropColumn('id_category');
+            $table->integer('id_category');
         });
     }
 }
