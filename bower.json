@@ -1,0 +1,21 @@
+{
+  "name": "online_test",
+  "description": "",
+  "main": "",
+  "authors": [
+    "at-tungpt <tungpt@asiantech.vn>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/at-tungpt/souvenir_management",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.11"
+  }
+}
