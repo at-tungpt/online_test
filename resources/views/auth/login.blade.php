@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@include('layouts/partials.header')
 <div class="container">
     <div class="info">
         <h1>{{ trans('login_trans.slogan') }}</h1>
@@ -21,4 +21,4 @@
         <a href="{{url('redirect/google')}}" class="gp"><i class="fa fa-google-plus"></i></a>
       </div>
 </div>
-@extends('layouts.footer')
+@include('layouts/partials.footer')
