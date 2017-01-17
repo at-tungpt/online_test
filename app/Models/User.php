@@ -4,8 +4,6 @@ namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Models\Role;
-use App\Models\Test;
 
 class User extends Authenticatable
 {
@@ -33,21 +31,22 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get role of user
-     *
-     * @return role Information role a user
-     */
-    public function roles()
+    * Get role of user
+    *
+    * @return role Information role a user
+    */
+    public function role()
     {
-        return $this->belongsTo('App/Models/Role');
+        return $this->belongsTo('App\Models\Role');
     }
+
     /**
-     * Get the test of user
-     *
-     * @return test List test
-     */
-    public function tests()
+    * Get the test of user
+    *
+    * @return test List test
+    */
+    public function test()
     {
-        return $this->hasMany('App/Models/Test');
+        return $this->belongsTo('App\Models\Test');
     }
 }

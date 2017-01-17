@@ -15,7 +15,7 @@ class SocialAccount extends Model
      *
      * @return user_id description
      */
-    public function users()
+    public function user()
     {
         return $this->hasOne('App/Models/User', 'user_id');
     }
