@@ -1,4 +1,5 @@
 <?php
+
 return [
     'ROLEADMIN' => '1',
     'ROLETEACHER' => '2',
