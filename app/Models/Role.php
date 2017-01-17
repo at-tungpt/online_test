@@ -6,16 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
-    protected $table = "roles";
+    protected $table = 'roles';
 
-    protected $fillable = ['name'];
+    protected $fillable = ['id', 'role'];
 
     /**
      * Get role of use
      *
      * @return user [description]
      */
-    public function users()
+    public function user()
     {
         return $this->hasMany('App\Model\User');
     }

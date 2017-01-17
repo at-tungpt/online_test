@@ -20,3 +20,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 Route::get('/redirect', 'SocialAccountController@redirect');
 Route::get('/callback', 'SocialAccountController@callback');
+Route::group(['middleware'=> 'admin', 'prefix' => 'admin' ], function (){
+    Route::get('/', function(){
+         return view('admin.index');
+     });
+   
+});
+Route::group(['middleware'=> 'teacher', 'prefix' => 'teacher' ], function (){
+    Route::get('/', function(){
+         return view('admin.index');
+     });
+   
+});
