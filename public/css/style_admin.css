@@ -123,5 +123,18 @@ span #point{
   text-align: center;
 
 }
+th{
+  padding-left: 4%;
+}
+
+td{
+  margin-left: 4%;
+}
+.email{
+  color: red;
+}
+.role{
+  font-weight: bold;
+}
 
 

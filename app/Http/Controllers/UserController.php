@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
 use App\Http\Requests\UserRequest;
+use Illuminate\Support\Facades\DB;
 use Session;
 
 class UserController extends Controller

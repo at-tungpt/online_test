@@ -54,7 +54,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="">{!! trans('left_bar_trans.view_list') !!}</a></li>
+          <li><a href="{!! url('admin/student') !!}">{!! trans('left_bar_trans.view_list') !!}</a></li>
         </ul>
       </li>
 
@@ -65,7 +65,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-         <li><a href="">{!! trans('left_bar_trans.view_list') !!}</a></li>
+         <li><a href="{!! url('admin/teacher') !!}">{!! trans('left_bar_trans.view_list') !!}</a></li>
       </ul>
 
       <li class="treeview">

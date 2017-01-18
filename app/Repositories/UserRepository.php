@@ -39,4 +39,17 @@ class UserRepository extends Repository
         $file->move($path, $image);
         return $image;
     }
+    
+    /**
+     *Get list useer
+     *
+     *@param int $role description
+     *
+     *@return array
+     */
+    public function getUser($role)
+    {
+        // dd( $this->model->where('role_id')->get());
+        return $this->model->where('role_id', $role)->paginate();
+    }
 }
