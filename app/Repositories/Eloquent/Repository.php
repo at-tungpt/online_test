@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Container\Container as App;
 use App\Repositories\Contracts\RepositoryInterface;
 use Exception;
+use Carbon\Carbon;
 
 /**
  * Class Repository
