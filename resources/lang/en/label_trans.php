@@ -9,5 +9,14 @@ return [
     'online_test' => 'MANAGER ONLINE TEST ',
     'test' => 'TEST',
     'profile' => 'Profile',
-    'log_out' => 'Log Out'
+    'log_out' => 'Log Out',
+    'no' => 'No.',
+    'fullname' => 'Fullname',
+    'email' => 'Email',
+    'birthday' => 'Birthday',
+    'avatar' => 'Avatar',
+    'action' => 'Action',
+    'edit' => 'Edit',
+    'view' => 'View',
+    'delete' => 'Delete',
 ];
