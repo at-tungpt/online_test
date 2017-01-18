@@ -48,12 +48,12 @@
               </li>
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="/user/{{ Auth::user()->id }}/edit" class="btn btn-default btn-flat"><span class="glyphicon glyphicon-user"></span>{!! trans('header.profile') !!}</a>
+                  <a href="/user/{{ Auth::user()->id }}/edit" class="btn btn-default btn-flat"><span class="glyphicon glyphicon-user"></span>{!! trans('header_trans.profile') !!}</a>
                 </div>
                 <div class="pull-right">
                   <form id="logout-form" action="{{ url('/logout') }}" method="POST">
                     {{ csrf_field() }}
-                    <input type="submit" id="logout" name="" value="{!! trans('header.sign_out') !!}">
+                    <input type="submit" id="logout" name="" value="{!! trans('header_trans.sign_out') !!}">
                   </form>
                 </div>
               </li>

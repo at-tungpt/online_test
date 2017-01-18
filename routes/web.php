@@ -32,3 +32,9 @@ Route::group(['middleware'=> 'teacher', 'prefix' => 'teacher' ], function (){
      });
    
 });
+Route::group(['middleware' => 'auth'], function()
+{
+    Route::resource('user', 'UserController' , [
+        'only' => ['index', 'edit', 'update']
+    ]);
+});

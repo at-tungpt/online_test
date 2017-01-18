@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5dceaf8ab0fb3aef65b670343df39c72",
-    "content-hash": "fb3dba5c907d81b6bd51951b0c64058e",
+    "hash": "8afa91dbacef448db9de1057d9e59a30",
+    "content-hash": "e191753e96590fbc004ec5c84adbb37a",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1037,16 +1037,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.22.0",
+            "version": "1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "3b114ab800c6432ad42387ccf6bc8d4388a2885a"
+                "reference": "7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/3b114ab800c6432ad42387ccf6bc8d4388a2885a",
-                "reference": "3b114ab800c6432ad42387ccf6bc8d4388a2885a",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc",
+                "reference": "7cdf42c0b1cc763ab7e4c33c47a24e27c66bfccc",
                 "shasum": ""
             },
             "require": {
@@ -1086,7 +1086,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-01-15 14:47:48"
+            "time": "2017-01-16 07:55:07"
         },
         {
             "name": "nikic/php-parser",
