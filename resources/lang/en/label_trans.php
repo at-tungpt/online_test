@@ -22,4 +22,5 @@ return [
     'information' => 'Information',
     'created_at' => 'Created at',
     'updated_at' => 'Updated at',
+    'delete_successfully' => 'Delete successfully',
 ];
