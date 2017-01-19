@@ -10,9 +10,7 @@
                         {{ Session::get('msg') }}
                     </div>
                 @endif
-                @include('admin.teacher.table')
                 <div class="clearfix"></div>
-                {!! $user->render() !!}
             </div>
         </div>
     </div>

@@ -14,10 +14,14 @@
         <td>{{ $user->name }}</td>
         <td class="email">{{ $user->email }}</td>
         <td>{{ $user->birthday }}</td>
-        <td>{{ $user->avatar }}</td>
+        <td><img src="{{ config('path.path_avatar') }}{{ $user->avatar }}" alt="" class="image"></td>
         <td>
-            <a href="" class="glyphicon glyphicon-pencil">{{ trans('label_trans.view')}}</a>
-            <a href="" class="glyphicon glyphicon-eye-open">{{ trans('label_trans.edit')}}</a>
+            @if ( $user->role_id == config('define.ROLESTUDENT'))
+            <a href="{{ route('admin-showstudent', [$user->id]) }}" class="glyphicon glyphicon-eye-open">{{ trans('label_trans.view')}}</a>
+            @elseif ($user->role_id == config('define.ROLETEACHER'))
+             <a href="{{ route('admin-showteacher', [$user->id]) }}" class="glyphicon glyphicon-eye-open">{{ trans('label_trans.view')}}</a>
+            @endif
+            <a href="" class="glyphicon glyphicon-pencil">{{ trans('label_trans.edit')}}</a>
             <a href="" class="glyphicon glyphicon-trash">{{ trans('label_trans.delete')}}</a>
         </td>
     </tr>

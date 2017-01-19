@@ -19,4 +19,7 @@ return [
     'edit' => 'Edit',
     'view' => 'View',
     'delete' => 'Delete',
+    'information' => 'Information',
+    'created_at' => 'Created at',
+    'updated_at' => 'Updated at',
 ];

@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'path_avatar' => 'images/avatar',
+    'path_avatar' => '/images/avatar/',
 ];

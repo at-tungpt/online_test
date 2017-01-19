@@ -29,6 +29,24 @@ class TeacherController extends Controller
     {
         $role = config('define.ROLETEACHER');
         $user = $this->userRepository->getUser($role);
-        return view('admin.teacher.index', compact('user'));
+        return view('admin.view', compact('user'));
+    }
+
+    /**
+     * Show detail of user
+     *
+     * @param int $id id of user
+     *
+     * @return array     information of user
+     */
+    public function show($id)
+    {
+        $role = config('define.ROLETEACHER');
+        $user = $this->userRepository->getById($role, $id);
+        if (empty($user)) {
+            Session::flash('msg', trans('label_trans.not_found'));
+            return view('admin.index');
+        }
+        return view('admin.show', compact('user'));
     }
 }

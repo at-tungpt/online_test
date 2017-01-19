@@ -58,10 +58,10 @@ class UserController extends Controller
         $user = $this->userRepository->find($id);
         if (empty($user)) {
             Session::flash('msg', trans('label_trans.not_found'));
-            return back()->withInput();
+            return view('admin.index');
         }
         $input = $request->only('name', 'password', 'gender', 'birthday', 'number_phone');
-
+        dd($input);
         if ($request->hasFile('avatar')) {
             $input['avatar'] = $this->userRepository->saveFile($request->file('avatar'));
             $oldImage = $user->avatar;
@@ -77,6 +77,6 @@ class UserController extends Controller
         }
         $user = $this->userRepository->update($input, $id);
         Session::flash('msg', trans('user.update_successfully'));
-        return back()->withInput();
+        return view('admin.index');
     }
 }
