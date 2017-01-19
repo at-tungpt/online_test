@@ -81,7 +81,15 @@ class UserController extends Controller
         return view('admin.index');
     }
 
-    public function destroy($id){
+    /**
+     * Delete a user
+     *
+     * @param int $id id of user
+     *
+     * @return array     delete a user in list view
+     */
+    public function destroy($id)
+    {
         $user = $this->userRepository->delete($id);
         if (empty($user)) {
             Session::flash('msg', trans('label_trans.not_found'));
