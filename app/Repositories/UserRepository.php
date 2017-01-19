@@ -41,7 +41,7 @@ class UserRepository extends Repository
     }
     
     /**
-     *Get list useer
+     *Get list user
      *
      *@param int $role description
      *
@@ -50,5 +50,18 @@ class UserRepository extends Repository
     public function getUser($role)
     {
         return $this->model->where('role_id', $role)->paginate();
+    }
+
+    /**
+     * Get list user by id
+     *
+     * @param int $role role of user
+     * @param int $id   id of user
+     *
+     * @return array    information of a user
+     */
+    public function getById($role, $id)
+    {
+        return $this->model->where('role_id', $role)->find($id);
     }
 }

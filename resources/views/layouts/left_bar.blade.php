@@ -7,9 +7,9 @@
     <div class="user-panel">
       <div class="pull-left image">
         @if(!empty(Auth::user()->avatar))
-          <img src="{{ config('image.path_avatar')}}/{{Auth::user()->avatar }}" class="img-circle avatar" id="output">
+          <img src="{{ config('path.path_avatar')}}{{Auth::user()->avatar }}" class="img-circle avatar" id="output">
         @else
-          <img src="{{ config('image.path_avatar')}}/avatar-default.png" class="img-circle avatar">
+          <img src="{{ config('path.path_avatar')}}avatar-default.png" class="img-circle avatar">
         @endif
       </div>
       <div class="pull-left info">
@@ -17,7 +17,7 @@
       </div>
     </div>
       
-    @if (Auth::user()->role_id == Config::get('define.ROLEADMIN')){
+    @if (Auth::user()->role_id == Config::get('define.ROLEADMIN'))
     <!-- search form (Optional) -->
     <form action="" method="get" class="sidebar-form">
       <div class="input-group">

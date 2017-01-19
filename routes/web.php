@@ -27,6 +27,8 @@ Route::group(['middleware'=> 'admin', 'prefix' => 'admin' ], function (){
      });
     Route::get('/student', 'StudentController@index');
     Route::get('/teacher', 'TeacherController@index');
+    Route::get('student/detail/{id}', 'StudentController@show')->name('admin-showstudent');
+    Route::get('teacher/detail/{id}', 'TeacherController@show')->name('admin-showteacher');
    
 });
 Route::group(['middleware'=> 'teacher', 'prefix' => 'teacher' ], function (){
