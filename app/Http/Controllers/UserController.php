@@ -61,7 +61,6 @@ class UserController extends Controller
             return view('admin.index');
         }
         $input = $request->only('name', 'password', 'gender', 'birthday', 'number_phone');
-        dd($input);
         if ($request->hasFile('avatar')) {
             $input['avatar'] = $this->userRepository->saveFile($request->file('avatar'));
             $oldImage = $user->avatar;
