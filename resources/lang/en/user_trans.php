@@ -16,5 +16,9 @@ return [
     'male' => 'Male',
     'female' => 'Female',
     'other' => 'Other',
+    'activate' => 'Activate',
+    'disabled' => 'Disabled',
+    'status' => 'Status',
+    'are_you_sure_delete_user' => 'Are you sure delete user ?',
 
 ];

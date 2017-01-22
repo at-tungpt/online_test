@@ -95,7 +95,7 @@ class UserController extends Controller
             Session::flash('msg', trans('label_trans.not_found'));
             return view('admin.index');
         }
-        Session::flash('msg', trans('label_trans.update_successfully'));
+        Session::flash('msg', trans('label_trans.delete_successfully'));
         return back()->withInput();
     }
 }
