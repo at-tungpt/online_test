@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layouts.partials.header')
 <div class="container">
     <div class="info">
         <h1>{{ trans('login_trans.slogan') }}</h1>
@@ -17,4 +17,4 @@
         </button>
     </form>
 </div>
-@extends('layouts.footer')
+@extends('layouts.partials.footer')

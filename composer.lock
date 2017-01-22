@@ -2581,16 +2581,16 @@
         },
         {
             "name": "pdepend/pdepend",
-            "version": "2.4.1",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pdepend/pdepend.git",
-                "reference": "3acfa4fcadbb8b65b8b2ec077408c5ef0e112e68"
+                "reference": "0c50874333149c0dad5a2877801aed148f2767ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/3acfa4fcadbb8b65b8b2ec077408c5ef0e112e68",
-                "reference": "3acfa4fcadbb8b65b8b2ec077408c5ef0e112e68",
+                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/0c50874333149c0dad5a2877801aed148f2767ff",
+                "reference": "0c50874333149c0dad5a2877801aed148f2767ff",
                 "shasum": ""
             },
             "require": {
@@ -2617,7 +2617,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Official version of pdepend to be handled with Composer",
-            "time": "2017-01-11 16:15:35"
+            "time": "2017-01-19 14:23:36"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2767,20 +2767,21 @@
         },
         {
             "name": "phpmd/phpmd",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmd/phpmd.git",
-                "reference": "9298602a922cd8c46666df8d540a60bc5925ce55"
+                "reference": "4e9924b2c157a3eb64395460fcf56b31badc8374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/9298602a922cd8c46666df8d540a60bc5925ce55",
-                "reference": "9298602a922cd8c46666df8d540a60bc5925ce55",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/4e9924b2c157a3eb64395460fcf56b31badc8374",
+                "reference": "4e9924b2c157a3eb64395460fcf56b31badc8374",
                 "shasum": ""
             },
             "require": {
-                "pdepend/pdepend": "^2.0.4",
+                "ext-xml": "*",
+                "pdepend/pdepend": "^2.5",
                 "php": ">=5.3.9"
             },
             "require-dev": {
@@ -2828,7 +2829,7 @@
                 "phpmd",
                 "pmd"
             ],
-            "time": "2016-11-23 20:33:32"
+            "time": "2017-01-20 14:41:10"
         },
         {
             "name": "phpspec/prophecy",
@@ -2895,16 +2896,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "4.0.4",
+            "version": "4.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a"
+                "reference": "c19cfc7cbb0e9338d8c469c7eedecc2a428b0971"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c14196e64a78570034afd0b7a9f3757ba71c2a0a",
-                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c19cfc7cbb0e9338d8c469c7eedecc2a428b0971",
+                "reference": "c19cfc7cbb0e9338d8c469c7eedecc2a428b0971",
                 "shasum": ""
             },
             "require": {
@@ -2954,7 +2955,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-12-20 15:22:42"
+            "time": "2017-01-20 15:06:43"
         },
         {
             "name": "phpunit/php-file-iterator",
