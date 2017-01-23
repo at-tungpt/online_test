@@ -49,4 +49,22 @@ class TeacherController extends Controller
         }
         return view('admin.show', compact('user'));
     }
+
+    /**
+     * Block teacher by id
+     *
+     * @param int $id id of teacher
+     *
+     * @return array     teach
+     */
+    public function blockUser($id)
+    {
+        $role = config('define.ROLETEACHER');
+        $user = $this->userRepository->block($role, $id);
+        if (empty($user)) {
+            Session::flash('msg', trans('label_trans.not_found'));
+            return view('admin.index');
+        }
+        return back()->withInput();
+    }
 }

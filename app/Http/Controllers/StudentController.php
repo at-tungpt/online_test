@@ -50,4 +50,22 @@ class StudentController extends Controller
         }
         return view('admin.show', compact('user'));
     }
+
+    /**
+     * Block a student by id user
+     *
+     * @param int $id id of student
+     *
+     * @return array     student
+     */
+    public function blockUser($id)
+    {
+        $role = config('define.ROLESTUDENT');
+        $user = $this->userRepository->block($role, $id);
+        if (empty($user)) {
+            Session::flash('msg', trans('label_trans.not_found'));
+            return view('admin.index');
+        }
+        return back()->withInput();
+    }
 }

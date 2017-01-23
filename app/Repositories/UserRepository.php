@@ -64,4 +64,20 @@ class UserRepository extends Repository
     {
         return $this->model->where('role_id', $role)->find($id);
     }
+
+    /**
+     * Block a uer by id
+     *
+     * @param int $role role of user
+     * @param int $id   id of user
+     *
+     * @return array    user
+     */
+    public function block($role, $id)
+    {
+        $user = $this->model->where('role_id', $role)->find($id);
+        $user->status = ($user->status == config('define.DISSABLED')) ? config('define.ACTIVATE') : config('define.DISSABLED');
+        $user->save();
+        return $user;
+    }
 }
