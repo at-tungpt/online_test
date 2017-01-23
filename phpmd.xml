@@ -9,8 +9,13 @@
 
 
     <rule ref="rulesets/codesize.xml">
-        <exclude name="ExcessiveClassComplexity"/>
-        <exclude name="ExcessiveParameterList"/>
+        <exclude name="TooManyPublicMethods" />
+        <exclude name="TooManyMethods" />
+        <exclude name="ExcessiveParameterList" />
+        <exclude name="NPathComplexity" />
+        <exclude name="CyclomaticComplexity" />
+        <exclude name="ExcessiveClassComplexity" />
+        <exclude name="ExcessiveMethodLength" />
     </rule>
 
     <rule ref="rulesets/controversial.xml">

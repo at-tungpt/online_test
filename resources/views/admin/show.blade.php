@@ -64,7 +64,7 @@
                      <!-- Avatar Field -->
                     <p class="form-group-2">
                         {!! Form::label('avatar', trans('user_trans.avatar')) !!}
-                        <img src="{!! config('image.path_avatar') !!}{!! $user->avatar !!}" class="avatar">
+                        <img src="{!! config('path.path_avatar') !!}{!! $user->avatar !!}" class="avatar">
                     </p>
                     </div>
                     <div class='clearfix'></div>

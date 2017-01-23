@@ -1,6 +1,6 @@
   <footer class="main-footer">
     <!-- Default to the left -->
-    <strong>{!! trans('footer_trans.copy_right') !!}<a href="#">{!! trans('header_trans.online_test') !!}</a></strong>{!! trans('footer_trans.all_right') !!}
+    <strong>{!! trans('footer_trans.copy_right') !!}<a href="#">{!! trans('footer_trans.developer') !!}</a></strong>{!! trans('footer_trans.all_right') !!}
   </footer>
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->

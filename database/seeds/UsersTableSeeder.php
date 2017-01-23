@@ -22,6 +22,8 @@ class UsersTableSeeder extends Seeder
           'remember_token' => str_random(100),
           'created_at' => $faker->dateTimeThisDecade($max = 'now'),
           'updated_at' => $faker->dateTimeThisDecade($max = 'now'),
+          'avatar' => 'default.png',
+          'status' => '1',
         ]);
         for($i = 0; $i < 100; $i++) {
           do {
@@ -40,6 +42,8 @@ class UsersTableSeeder extends Seeder
               'remember_token' => str_random(100),
               'created_at' => $created,
               'updated_at' => $updated,
+              'avatar' => 'default.png',
+              'status' => '1',
             ]);
           } else {
             $i--;

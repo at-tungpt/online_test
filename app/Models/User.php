@@ -45,7 +45,7 @@ class User extends Authenticatable
     *
     * @return test List test
     */
-    public function test()
+    public function name()
     {
         return $this->belongsTo('App\Models\Test');
     }
