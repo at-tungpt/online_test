@@ -6,11 +6,11 @@
     </tr>
   </thead>
   <tbody class="table-content">
-    @if (!empty($postCategory))
-      @foreach ($postCategory as $postCategory)
+    @if (!empty($postCategories))
+      @foreach ($postCategories as $postCategories)
       <tr class="table-tr">
           <td class="table-td">
-              <a href="">{!! str_limit(strip_tags($postCategory->name), 50) !!}</a>
+              <a href="">{!! str_limit(strip_tags($postCategories->name), 50) !!}</a>
           </td>
           <td>
                 <a href=""><i class="glyphicon glyphicon-pencil"></i>{{ trans('label_trans.edit')}}</a>

@@ -12,17 +12,12 @@ class PostCategoryRepository extends Repository
     protected $postCategory;
 
     /**
-     * Relationship 
+     * Relationship
+     *
      * @return void relationship of Post category
      */
-    /**
-     * Constructor for category repository
-     *
-     * @param Category $category App\Models\Category
-     */
-     public function model()
+    public function model()
     {
         return 'App\Models\PostCategory';
     }
-
 }

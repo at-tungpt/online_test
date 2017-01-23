@@ -21,7 +21,7 @@
           <div class="box">
             <div class="box-body">
 
-                @if (!empty($postCategory))
+                @if (!empty($postCategories))
                   @include('postCategory.table')
                 @endif
             </div>

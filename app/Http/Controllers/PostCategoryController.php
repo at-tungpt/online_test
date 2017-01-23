@@ -10,28 +10,26 @@ use session;
 
 class PostCategoryController extends Controller
 {
-    protected $postCategoryRepository;
+    protected $postCategory;
 
     /**
-     * [__construct description]
+     * Function__construct description
      *
-     * @param PostCategoryRepository $postCategory void
+     * @param postCategory $postCategory void
      */
-    public function __construct(PostCategoryRepository $postCategoryRepository)
+    public function __construct(PostCategoryRepository $postCategory)
     {
-        return $this->postCategoryRepository = $postCategoryRepository;
-
+        return $this->postCategory = $postCategory;
     }
 
     /**
-     * List categories
+     * List all categories
      *
      * @return array categories
      */
     public function index()
     {
-        $postCategory = $this->postCategoryRepository->all();
-        return view('postCategory/view', compact('postCategory'));
-
+        $postCategories = $this->postCategory->all();
+        return view('postCategory/view', compact('postCategories'));
     }
 }
