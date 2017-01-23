@@ -17,9 +17,13 @@ return [
     'avatar' => 'Avatar',
     'action' => 'Action',
     'edit' => 'Edit',
-    'view' => 'View',
+    'detail' => 'Detail',
     'delete' => 'Delete',
     'information' => 'Information',
     'created_at' => 'Created at',
     'updated_at' => 'Updated at',
+    'delete_successfully' => 'Delete successfully',
+    'lock' => 'Lock',
+    'unlock' => 'Unlock',
+    'account_not_activate' => 'Account is dissabled. Please contact admin'
 ];

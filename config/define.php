@@ -7,5 +7,7 @@ return [
     'MALE' => '1',
     'FEMALE' => '2',
     'OTHER' => '3',
+    'ACTIVATE' => '1',
+    'DISSABLED' => '0',
 
 ];

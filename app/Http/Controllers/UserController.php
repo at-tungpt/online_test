@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
+use App\Repositories\Contracts\RepositoryInterface;
+use App\Repositories\Eloquent\Repositories;
 use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\DB;
 use Session;
@@ -75,7 +77,25 @@ class UserController extends Controller
             }
         }
         $user = $this->userRepository->update($input, $id);
-        Session::flash('msg', trans('user.update_successfully'));
+        Session::flash('msg', trans('label_trans.update_successfully'));
         return view('admin.index');
+    }
+
+    /**
+     * Delete a user
+     *
+     * @param int $id id of user
+     *
+     * @return array     delete a user in list view
+     */
+    public function destroy($id)
+    {
+        $user = $this->userRepository->delete($id);
+        if (empty($user)) {
+            Session::flash('msg', trans('label_trans.not_found'));
+            return view('admin.index');
+        }
+        Session::flash('msg', trans('label_trans.update_successfully'));
+        return back()->withInput();
     }
 }

@@ -50,6 +50,15 @@
                         {!! Form::label('updated_at', trans('label_trans.updated_at')) !!}
                         {!! $user->updated_at !!}
                     </p>
+                    <!-- Status Field -->
+                    <p class="form-group">
+                        {!! Form::label('status', trans('user_trans.status')) !!}
+                        @if ($user->status == config('define.ACTIVATE'))
+                        {!! trans('user_trans.activate') !!}
+                        @else
+                        {!! trans('user_trans.disabled') !!}
+                        @endif
+                    </p>
                     </div>
                     <div class="user-left">
                      <!-- Avatar Field -->
