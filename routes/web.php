@@ -39,7 +39,7 @@ Route::group(['middleware'=> ['checkStatus','admin'], 'prefix' => 'admin' ], fun
     Route::get('block/student/{id}', 'StudentController@blockUser')->name('student-block');
     Route::get('block/teacher/{id}', 'TeacherController@blockUser')->name('teacher-block');
     Route::get('/category', 'PostCategoryController@index');
-
+    Route::get('/media', 'PostController@index')->name('media-view');
 
 });
 Route::group(['middleware'=> 'teacher', 'prefix' => 'teacher' ], function (){

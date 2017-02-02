@@ -149,9 +149,17 @@ td{
 }
 
 .action-user {
-  padding-left: 20%;
   text-align: center;
 }
-
+.img-thumbnail{
+  width: 150px;
+  height: 150px;
+}
 .action {
+  text-align: center;
+}
+.action-user a{
+  display: block;
+  margin:2% 3%;
+
 }

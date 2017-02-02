@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\PostCategoryRepository;
 use App\Repositories\Contracts\RepositoryInterface;
-use App\Repositories\Eloquent\Repositories;
+use App\Repositories\Eloquent\Repository;
 use session;
 
 class PostCategoryController extends Controller
