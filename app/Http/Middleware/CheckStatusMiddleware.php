@@ -17,11 +17,10 @@ class CheckStatusMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (auth()->check() && auth()->user()->status == config('define.ACTIVATE')) {
+        if (auth()->check() && (auth()->user()->status == config('define.ACTIVATE'))) {
             return $next($request);
         }
-        Session::put('msg', trans('label_trans.account_not_activate'));
-
+        Session::flash('msg', trans('label_trans.account_not_activate'));
         return redirect('/');
     }
 }

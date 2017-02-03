@@ -124,11 +124,11 @@ span #point{
 
 }
 th{
-  padding-left: 4%;
+  padding-left: 0px;
 }
 
 td{
-  margin-left: 4%;
+  margin-left: 0px;
 }
 .email{
   color: red;
@@ -141,5 +141,17 @@ td{
   width: 80px;
   height: 80px;
   border-radius: 5%;
+  margin: 5px 10px;
 }
 
+.title-image {
+  text-align: center;
+}
+
+.action-user {
+  padding-left: 20%;
+  text-align: center;
+}
+
+.action {
+}

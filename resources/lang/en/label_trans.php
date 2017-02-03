@@ -25,5 +25,9 @@ return [
     'delete_successfully' => 'Delete successfully',
     'lock' => 'Lock',
     'unlock' => 'Unlock',
-    'account_not_activate' => 'Account is dissabled. Please contact admin'
+    'account_not_activate' => 'Account is dissabled. Please contact admin',
+    'name' => 'Name',
+    'category_root' => 'Category root',
+    'category_children' => 'Category children',
+    
 ];

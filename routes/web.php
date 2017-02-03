@@ -38,6 +38,7 @@ Route::group(['middleware'=> ['checkStatus','admin'], 'prefix' => 'admin' ], fun
     Route::get('user/{id}', 'UserController@destroy')->name('admin-delete');
     Route::get('block/student/{id}', 'StudentController@blockUser')->name('student-block');
     Route::get('block/teacher/{id}', 'TeacherController@blockUser')->name('teacher-block');
+    Route::get('/category', 'PostCategoryController@index');
 
 
 });

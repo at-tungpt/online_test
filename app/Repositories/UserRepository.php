@@ -11,7 +11,7 @@ use session;
 class UserRepository extends Repository
 {
 
-    protected $UserRepository;
+    protected $userRepository;
     
 
     /**
