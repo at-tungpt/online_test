@@ -161,5 +161,31 @@ td{
 .action-user a{
   display: block;
   margin:2% 3%;
-
+}
+.title-media {
+  color: red;
+}
+.id {
+  color: blue;
+  background-color: #f7ef7b;
+}
+.hover-delete {
+  display: none;
+  background-color:#b7f280;
+  border-radius:5%;
+}
+.glyphicon:hover + .hover-delete{
+  color: #630702;
+  display: block;
+  padding: 5% 10%;
+}
+.hover-detail {
+  display: none;
+  background-color:#b7f280;
+  border-radius:5%; 
+}
+.glyphicon:hover + .hover-detail {
+  color: #630702;
+  display: block;
+  padding: 5% 10%;
 }

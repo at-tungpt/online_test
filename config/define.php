@@ -9,5 +9,5 @@ return [
     'OTHER' => '3',
     'ACTIVATE' => '1',
     'DISSABLED' => '0',
-
+    'AVATAR_DEFAULT' => 'default.png',
 ];

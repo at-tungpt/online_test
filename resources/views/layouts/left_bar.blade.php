@@ -100,7 +100,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="">{!! trans('left_bar_trans.create_new') !!}</a></li>
+          <li><a href="{!! url('admin/media')!!}">{!! trans('left_bar_trans.view_list') !!}</a></li>
         </ul>
       </li>
 
