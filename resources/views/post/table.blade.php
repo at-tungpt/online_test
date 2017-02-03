@@ -3,20 +3,18 @@
         <th class="no">{{ trans('label_trans.no')}}</th>
         <th>{{ trans('label_trans.name') }}</th>
         <th>{{ trans('label_trans.title')}}</th>
-        <th>{{ trans('label_trans.description')}}</th>
         <th class="action">{{ trans('label_trans.action')}}</th>
     </thead>
     <tbody>
     @foreach($postMedia as $post)
     <tr>
-        <td>{{ $post->id }}</td>
+        <td class="id">{{ $post->id }}</td>
         <td>{{ $post->name }}</td>
-        <td>{{ str_limit($post->title, 50) }}</td>
-        <td>{{ str_limit($post->description, 50) }}</td>
+        <td class="title-media">{{ str_limit($post->title, 100) }}</td>
         <td class="action-user">
            
-            <a href="" class="glyphicon glyphicon-eye-open">{{ trans('label_trans.detail')}}</a>
-            <a href="" alt="{{ trans('notification_trans.are_you_sure_delete_user') }}" class="delete-user" ><i class="glyphicon glyphicon-trash"></i>{{ trans('label_trans.delete')}}</a>
+            <a href="" ><i class="glyphicon glyphicon-eye-open"></i><i class="hover-detail">{{ trans('label_trans.detail')}}</i></a>
+            <a href="{{ route('media-delete', [$post->id]) }}" alt="{{ trans('notification_trans.are_you_sure_delete_user') }}" class="delete-user" ><i class="glyphicon glyphicon-trash"></i><i class="hover-delete">{{ trans('label_trans.delete')}}</i></a>
         </td>
     </tr>
     @endforeach

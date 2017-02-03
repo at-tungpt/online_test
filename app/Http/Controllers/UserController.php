@@ -90,6 +90,10 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
+        $avatar = $this->userRepository->find($id)->avatar;
+        if (file_exists(config('path.path_avatar').$avatar) == true && $avatar != config('define.AVATAR_DEFAULT')) {
+            unlink(config('path.path_avatar').$avatar);
+        }
         $user = $this->userRepository->delete($id);
         if (empty($user)) {
             Session::flash('msg', trans('label_trans.not_found'));
