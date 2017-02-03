@@ -29,5 +29,8 @@ return [
     'name' => 'Name',
     'category_root' => 'Category root',
     'category_children' => 'Category children',
-    
+    'title' => 'Title',
+    'description' => 'Description',
+    'image' => 'Image',
+    'video' => 'Video',
 ];

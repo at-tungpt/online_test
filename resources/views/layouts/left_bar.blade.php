@@ -86,6 +86,9 @@
           </span>
         </a>
         <ul class="treeview-menu">
+          <li><a href="{!! url('admin/category') !!}">{!! trans('left_bar_trans.view_list') !!}</a></li>
+        </ul>
+        <ul class="treeview-menu">
           <li><a href="">{!! trans('left_bar_trans.create_new') !!}</a></li>
         </ul>
       </li>
