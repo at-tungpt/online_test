@@ -14,7 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/ajax/{id}', function () {
+    return view('ajax');
+});
+Route::get('/r/{id}', 'PostController@show');
 Auth::routes();
 Route::group(['middleware' => ['checkStatus', 'auth']], function()
 {
@@ -41,6 +44,7 @@ Route::group(['middleware'=> ['checkStatus','admin'], 'prefix' => 'admin' ], fun
     Route::get('/category', 'PostCategoryController@index');
     Route::get('/media', 'PostController@index');
     Route::get('media/{id}', 'PostController@destroy')->name('media-delete'); 
+    Route::get('media/detail/{id}', 'PostController@show')->name('detail-media');
 
 });
 Route::group(['middleware'=> 'teacher', 'prefix' => 'teacher' ], function (){

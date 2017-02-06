@@ -78,6 +78,7 @@ img.update-img{
 .user-left{
   float:left;
   width:45%;
+  margin-right: 5%;
   padding-left:10px;
 }
 .user-right{

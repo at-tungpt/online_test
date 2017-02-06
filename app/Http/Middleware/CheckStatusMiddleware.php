@@ -21,6 +21,6 @@ class CheckStatusMiddleware
             return $next($request);
         }
         Session::flash('msg', trans('label_trans.account_not_activate'));
-        return redirect('/');
+        return redirect('/login');
     }
 }
