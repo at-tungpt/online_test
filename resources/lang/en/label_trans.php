@@ -35,4 +35,5 @@ return [
     'video' => 'Video',
     'author' => 'Author',
     'detail' => 'Detail',
+    'new_media' => 'Create media',
 ];

@@ -89,7 +89,6 @@ img.update-img{
   width: 100%;
 }
 
-
 .form-register-business input[type="checkbox"] {
   display: none;
 }
@@ -126,10 +125,14 @@ span #point{
 }
 th{
   padding-left: 0px;
+  text-align: center;
 }
 
 td{
   margin-left: 0px;
+  width: 900px;
+  height: 100px;
+  text-align: center;
 }
 .email{
   color: red;

@@ -8,8 +8,10 @@ use App\Repositories\UserRepository;
 use App\Repositories\PostCategoryRepository;
 use App\Repositories\Contracts\RepositoryInterface;
 use App\Repositories\Eloquent\Repository;
+use App\Http\Requests\PostRequest;
 use Session;
 use Auth;
+use File;
 
 class PostController extends Controller
 {
@@ -86,5 +88,33 @@ class PostController extends Controller
             $category = $this->postCategory->find($idCategory);
             return view('post.show', compact('detailMedia', 'user', 'category'));
         }
+    }
+
+    /**
+     * Create new a media
+     *
+     * @return list information of media
+     */
+    public function create()
+    {
+        $category = $this->postCategory->all()->pluck('name', 'id');
+        return view('post.create', compact('category'));
+    }
+
+    /**
+     * Save information of media
+     *
+     * @param PostRequest $request request
+     *
+     * @return array               information of media
+     */
+    public function store(PostRequest $request)
+    {
+        $input = $request->only('name', 'title', 'description', 'video', 'user_id', 'post_category_id');
+        if ($request->hasFile('image')) {
+            $input['image'] = $this->postCategory->saveFile($request->file('image'));
+        }
+        $this->postCategory->create($input);
+        return redirect('post.view');
     }
 }
