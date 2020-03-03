@@ -49,10 +49,11 @@
                 <p class="form-group">
                     @if(!empty(Auth::user()->avatar))
                     <img src="{{ config('path.path_avatar')}}{{Auth::user()->avatar }}" class="img-thumbnail" id="output">
+                    <p id="image-holder"></p>
                     @else
                     <img src="{{ config('path.path_avatar')}}avatar-default.png" class="img-thumbnail" id="output">
                     @endif
-                    {!! Form::file('avatar', array('id' => 'load-avatar')) !!}
+                    {!! Form::file('avatar', array('id' => 'fileUpload')) !!}
                 </p>
                     </div>
             <div class="clearfix"></div>

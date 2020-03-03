@@ -25,22 +25,6 @@ class UserRepository extends Repository
     }
 
     /**
-    * Method save  file into folder
-    *
-    * @param file $file file get from form.
-    *
-    * @return picture name to save into database
-    */
-    public function saveFile($file)
-    {
-        $now = Carbon::now();
-        $image = $now->toDateTimeString().$file->getClientOriginalName();
-        $path=config('path.path_avatar');
-        $file->move($path, $image);
-        return $image;
-    }
-    
-    /**
      *Get list user
      *
      *@param int $role description

@@ -102,6 +102,9 @@
         <ul class="treeview-menu">
           <li><a href="{!! url('admin/media')!!}">{!! trans('left_bar_trans.view_list') !!}</a></li>
         </ul>
+        <ul class="treeview-menu">
+          <li><a href="{!! url('admin/media/create') !!}">{!! trans('left_bar_trans.create_new') !!}</a></li>
+        </ul>
       </li>
 
       <li class="treeview">

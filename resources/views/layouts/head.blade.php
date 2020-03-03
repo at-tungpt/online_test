@@ -22,3 +22,4 @@
   <!-- customer -->
   <link rel="stylesheet" href="{{asset('/css/style_admin.css')}}">
   <meta name="_token" content="{!! csrf_token() !!}" />
+  <script src="{{ asset('js/load_image.js')}}" type="text/javascript" charset="utf-8" async defer></script>

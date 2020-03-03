@@ -197,4 +197,20 @@ abstract class Repository implements RepositoryInterface
         $lists = $this->model->select($columns)->orderBy($field, $sort)->limit($limit)->get();
         return $lists->load($relations);
     }
+
+    /**
+    * Method save  file into folder
+    *
+    * @param file $file file get from form.
+    *
+    * @return picture name to save into database
+    */
+    public function saveFile($file)
+    {
+        $now = Carbon::now();
+        $image = $now->toDateTimeString().$file->getClientOriginalName();
+        $path=config('path.path_avatar');
+        $file->move($path, $image);
+        return $image;
+    }
 }

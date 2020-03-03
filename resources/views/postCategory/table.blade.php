@@ -11,8 +11,8 @@
       <tr class="table-tr">
           <td class="table-td">
               <a href="">{!! str_limit(strip_tags($postCategories->name), 50) !!}</a>
-          </td>
-          <td>
+          </td >
+          <td class="table-td">
                 <a href=""><i class="glyphicon glyphicon-pencil"></i>{{ trans('label_trans.edit')}}</a>
                 <a href="" alt="{{ trans('notification_trans.are_you_sure_delete_category') }}" class="delete-user" ><i class="glyphicon glyphicon-trash"></i>{{ trans('label_trans.delete')}}</a>
           </td>
