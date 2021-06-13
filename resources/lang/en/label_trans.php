@@ -27,10 +27,12 @@ return [
     'unlock' => 'Unlock',
     'account_not_activate' => 'Account is dissabled. Please contact admin',
     'name' => 'Name',
-    'category_root' => 'Category root',
+    'category' => 'Category',
     'category_children' => 'Category children',
     'title' => 'Title',
     'description' => 'Description',
     'image' => 'Image',
     'video' => 'Video',
+    'author' => 'Author',
+    'detail' => 'Detail',
 ];
