@@ -19,7 +19,7 @@ class PostCategoryController extends Controller
      */
     public function __construct(PostCategoryRepository $postCategory)
     {
-        return $this->postCategory = $postCategory;
+        $this->postCategory = $postCategory;
     }
 
     /**
