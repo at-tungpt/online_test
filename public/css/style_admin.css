@@ -78,6 +78,7 @@ img.update-img{
 .user-left{
   float:left;
   width:45%;
+  margin-right: 5%;
   padding-left:10px;
 }
 .user-right{
@@ -87,7 +88,6 @@ img.update-img{
 .list-promotion{
   width: 100%;
 }
-
 
 .form-register-business input[type="checkbox"] {
   display: none;
@@ -125,10 +125,14 @@ span #point{
 }
 th{
   padding-left: 0px;
+  text-align: center;
 }
 
 td{
   margin-left: 0px;
+  width: 900px;
+  height: 100px;
+  text-align: center;
 }
 .email{
   color: red;

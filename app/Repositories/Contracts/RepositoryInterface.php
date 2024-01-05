@@ -80,4 +80,13 @@ interface RepositoryInterface
      * @return $this
      */
     public function with($relations);
+
+    /**
+    * Method save  file into folder
+    *
+    * @param file $file file get from form.
+    *
+    * @return picture name to save into database
+    */
+    public function saveFile($file);
 }

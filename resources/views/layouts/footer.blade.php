@@ -16,4 +16,5 @@
 <script src="/bower_components/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/bower_components/AdminLTE/dist/js/app.min.js"></script>
+<script src="/bower_components/AdminLTE/plugins/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="/js/style_admin.js"></script>
